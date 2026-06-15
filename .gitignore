@@ -1,0 +1,74 @@
+# ========================
+# Python
+# ========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+venv/
+env/
+.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ========================
+# Node / Frontend
+# ========================
+node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+
+# ========================
+# OS
+# ========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ========================
+# 项目数据（体积大，不纳入版本控制）
+# ========================
+# 训练数据集（图片）
+backend/data/classification/train/
+backend/data/classification/val/
+backend/data/classification/test/
+backend/data/classification/raw/
+backend/data/detection/images/
+backend/data/detection/labels/
+
+# 训练生成的缓存文件
+backend/data/detection/*.cache
+
+# 模型权重（超过 GitHub 单文件限制）
+backend/model/*.pt
+backend/model/runs/
+
+# 上传的图片
+backend/data/images/
+
+# 数据库
+backend/data/records.db
+
+# YOLOv8 下载的预训练权重
+yolov8*.pt
+
+# Kaggle / HuggingFace 缓存
+.kaggle/
+hf_cache/
+
+# ========================
+# 日志
+# ========================
+*.log

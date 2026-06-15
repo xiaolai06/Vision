@@ -1,0 +1,13 @@
+# YOLOv8 垃圾分类检测数据集配置
+# 4 个类别对应中国垃圾分类标准
+
+path: D:/desktop/机器视觉/垃圾分类/backend/data/detection
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: recyclable    # 可回收物
+  1: kitchen       # 厨余垃圾
+  2: hazardous     # 有害垃圾
+  3: other         # 其他垃圾
